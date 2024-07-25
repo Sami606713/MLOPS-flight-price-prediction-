@@ -11,7 +11,9 @@ def inisiate_data_ingestion():
     """
     In this fun first we will read the data.
     Then we will apply basic preprocessing like handling missing valeues removing duplicates and handling datatypes
+    We can save the data we will get in the raw folder
     """
+    raw_data_path=os.path.join("Data/Raw","raw.csv")
 
     logging.info("Getting the data")
     df=read_data()
@@ -19,6 +21,9 @@ def inisiate_data_ingestion():
     logging.info("Apply data cleaning")
 
     df=clean_data(df=df)
+
+    logging.info("saving the raw data")
+    df.to_csv(raw_data_path,index=False)
 
     return df
 
