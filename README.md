@@ -66,4 +66,5 @@ This repository includes a script, `template.py`, which automates the creation o
 | 9    | **Save Clean Data:** Save the cleaned dataset to the process folder. |
 | 10   | **Split Data:** Split the data into training and testing sets. |
 | 11   | **Save Split Data:** Save the training and testing sets to the process folder. |
+
 ![Feature Engnering](Images/feature_eng.png)
