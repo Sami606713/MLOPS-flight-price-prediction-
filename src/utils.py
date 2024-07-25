@@ -2,6 +2,7 @@ import os
 import pandas as pd
 import numpy as np
 import logging 
+import pickle as pkl
 
 logging.basicConfig(level=logging.INFO)
 
@@ -44,3 +45,11 @@ def clean_data(df):
     logging.info("Data Cleaning Successfully")
 
     return df
+
+
+def save_file(obj,file_path):
+    """
+    This fun is responsible for save the binary file like processor,models etc
+    """
+    with open(file_path,"wb") as f:
+        pkl.dump(obj,f)
