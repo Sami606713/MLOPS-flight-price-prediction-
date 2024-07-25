@@ -12,4 +12,4 @@ if __name__=="__main__":
     
     # Feature engnering
     fe=feature_engnering_config(df=df)
-    fe.inisiate_feature_engnering()
+    train_data_path,test_data_path=fe.inisiate_feature_engnering()
