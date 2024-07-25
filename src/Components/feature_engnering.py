@@ -85,6 +85,10 @@ class feature_engnering_config:
         logging.info("Saving the test data")
         test_data.to_csv(self.test_data_path,index=False)
         
+        return [
+            self.train_data_path,
+            self.test_data_path
+        ]
 
     def drop_col(self,col_list):
         """
