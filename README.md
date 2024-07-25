@@ -68,3 +68,22 @@ This repository includes a script, `template.py`, which automates the creation o
 | 11   | **Save Split Data:** Save the training and testing sets to the process folder. |
 
 ![Feature Engnering](Images/feature_eng.png)
+
+# Data Transformation Pipeline
+
+This module performs feature transformation steps necessary for preparing data for machine learning models. It handles tasks such as imputing missing values, encoding categorical features, and scaling numerical features.
+
+## Overview
+
+The `data_transformation_config` class includes methods for reading data, separating features from labels, applying transformations, and saving the processed data.
+
+## Features
+
+| **Feature**           | **Description**                                             |
+|-----------------------|-------------------------------------------------------------|
+| **Imputation**        | Fills missing values in numerical and categorical columns. |
+| **Encoding**          | Converts categorical columns to numerical format using one-hot encoding. |
+| **Scaling**           | Standardizes numerical columns to have zero mean and unit variance. |
+| **Saving Processor**  | Saves the transformation pipeline model for future use.    |
+
+![Feature Transformation](Images/featue_transformation.png)
