@@ -87,3 +87,35 @@ The `data_transformation_config` class includes methods for reading data, separa
 | **Saving Processor**  | Saves the transformation pipeline model for future use.    |
 
 ![Feature Transformation](Images/featue_transformation.png)
+
+
+# Model Training and Monetring
+This script is designed to train and evaluate multiple regression models to select the best-performing model based on evaluation metrics. It integrates with Optuna for hyperparameter tuning and MLflow for experiment tracking.
+
+## Script Components
+- `pandas`
+- `numpy`
+- `scikit-learn`
+- `mlflow`
+- `logging`
+
+### Data Preparation
+
+- **Input**: `train_array` and `test_array` (arrays containing both features and target values)
+- **Process**:
+  - Separates input features (`x_train`, `x_test`) and output labels (`y_train`, `y_test`) from the provided arrays.
+
+### Models
+
+- **Linear Regression**: `LinearRegression()`
+- **Random Forest Regressor**: `RandomForestRegressor()`
+- **AdaBoost Regressor**: `AdaBoostRegressor()`
+- **Gradient Boosting Regressor**: `GradientBoostingRegressor()`
+- **Bagging Regressor**: `BaggingRegressor()`
+- **Decision Tree Regressor**: `DecisionTreeRegressor()`
+
+# Hyperparameter Tunning
+- After training the models we can find the best model and apply the hyperparameter tunning uisng `OPTUNA`.
+- After hyperparameter tunning we can find the best model we can save and register the model using `mlflow registry`
+
+![Optuna and mlflow](Images/mlflow.png)
