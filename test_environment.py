@@ -6,6 +6,7 @@ Pipeline like data ingestion transformaton and model building pieplines etc
 from src.Components.data_ingestion import inisiate_data_ingestion
 from src.Components.feature_engnering import feature_engnering_config
 from src.Components.data_transformation import data_transformation_config
+from src.Components.model_training import Model_Training_Config
 
 if __name__=="__main__":
     # Data Ingestion
@@ -19,3 +20,7 @@ if __name__=="__main__":
     dt=data_transformation_config(train_data_path=train_data_path,
                                     test_data_path=test_data_path)
     train_array,test_array=dt.inisiate_data_transformation()
+
+    # Model training
+    trainer=Model_Training_Config(train_array=train_array,test_array=test_array)
+    trainer.train()
