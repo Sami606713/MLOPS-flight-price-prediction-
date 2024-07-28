@@ -63,9 +63,10 @@ class feature_engnering_config:
             )
 
         # drop columns
+        # Note we can also drop the journey year b/c t  contain only one single value.
         logging.info("Drop unecessary columns")
         col_to_drop=['Duration','Date_of_Journey','Arrival_Time',
-                    'Dep_Time','Route','Additional_Info']
+                    'Dep_Time','Route','Additional_Info','Journey_year']
         self.df=self.drop_col(col_list=col_to_drop)
 
         # Removeing 4 stop value

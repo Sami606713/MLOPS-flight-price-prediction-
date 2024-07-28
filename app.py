@@ -43,12 +43,10 @@ with col1:
 with col2:
     Arrival_min=st.number_input("Arrival_min",min_value=1,max_value=60,key='Arrival_min')
 
-col1,col2,col3=st.columns(3)
+col1,col2=st.columns(2)
 with col1:
-    Journey_year=st.selectbox("Journey_year",df['Journey_year'].value_counts().index,key='j_y')
-with col2:
     Journey_day=st.selectbox("Journey_day",df['Journey_day'].value_counts().index,key='j_d')
-with col3:
+with col2:
      Journey_month=st.selectbox("Journey_month",df['Journey_month'].value_counts().index,key="j_m")
 
 
@@ -59,7 +57,7 @@ if st.button('Predict Price'):
         "Total_Stops":Total_Stops,"Duration_In_Min":Duration_In_Min,
         "Dep_hour":Dep_hour,"Dep_min":Dep_min,
         "Arrival_hour":Arrival_hour,"Arrival_min":Arrival_min,
-        "Journey_year":Journey_year,"Journey_month":Journey_month,"Journey_day":Journey_day
+        "Journey_month":Journey_month,"Journey_day":Journey_day
     }
     df=pd.DataFrame(dic,index=[0])
     st.dataframe(df)

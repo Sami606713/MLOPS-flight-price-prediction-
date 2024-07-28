@@ -20,7 +20,7 @@ from sklearn.metrics import (
 )
 import optuna
 import mlflow
-from src.utils import train_models
+from src.utils import train_models,save_file
 import logging
 logging.basicConfig(level=logging.INFO)
 
@@ -106,6 +106,8 @@ class Model_Training_Config:
 
             # log final model
             mlflow.sklearn.log_model(best_model, "final_model")
+
+            
         return best_model, best_params
         
 

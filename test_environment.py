@@ -7,6 +7,8 @@ from src.Components.data_ingestion import inisiate_data_ingestion
 from src.Components.feature_engnering import feature_engnering_config
 from src.Components.data_transformation import data_transformation_config
 from src.Components.model_training import Model_Training_Config
+from src.utils import save_file
+import os
 
 if __name__=="__main__":
     # Data Ingestion
@@ -23,4 +25,8 @@ if __name__=="__main__":
 
     # Model training
     trainer=Model_Training_Config(train_array=train_array,test_array=test_array)
-    trainer.train()
+    best_model,_=trainer.train()
+
+    # Save the best model
+    best_model_path = os.path.join("Models", "best_model.pkl")
+    save_file(obj=best_model, file_path= best_model_path)

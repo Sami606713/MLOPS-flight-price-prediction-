@@ -20,9 +20,11 @@ def load_model(model_name,model_version):
     After loading the model it can return the model.
     """
     try:
-        logging.info("Loading the model")
-        model_uri = f"models:/{model_name}/{model_version}"
-        model = mlflow.pyfunc.load_model(model_uri)
+        # logging.info("Loading the model")
+        # model_uri = f"models:/{model_name}/{model_version}"
+        # model = mlflow.pyfunc.load_model(model_uri)
+        with open('Models/best_model.pkl',"rb")as f:
+            model=pkl.load(f)
         return model
         print("model successfully loaded")
     except Exception as e:
@@ -53,6 +55,7 @@ def predict(data):
     process_data=process_input(data=data)
 
     # load the model
+    # model=load_model(model_name="flight_price_prediction_model",model_version=1)
     model=load_model(model_name="flight_price_prediction_model",model_version=1)
     y_pred=model.predict(process_data)
 
