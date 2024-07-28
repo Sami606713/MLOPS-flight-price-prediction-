@@ -5,13 +5,11 @@
 
 ## Tools Used in This Project
 
-|  |  |
+|  |  |  |
 |-------------------------------|------------------------------|-------|
-| ![NumPy](Images/numpy.png) ![pandas](Images/pandas.png) ![matplotlib](Images/matplot.png) ![seaborn](Images/seaborn.jpeg) |  |  |
-| ![scikit-learn](Images/sjkean.png) ![MLflow](Images/mlflow2.png) |  |  |
-| ![Optuna](Images/optuna.png) |  |  |
-| ![Streamlit](Images/streamlit.png) |  |  |
-| ![Docker](Images/docker.png) ![GitHub Actions](https://avatars.githubusercontent.com/u/44036562?s=200&v=4) |  |  |
+| ![NumPy](Images/numpy.png) ![pandas](Images/pandas.png) ![matplotlib](Images/matplot.png) | ![seaborn](Images/seaborn.jpeg) ![scikit-learn](Images/sjkean.png) ![MLflow](Images/mlflow2.png) | ![Optuna](Images/optuna.png) ![Streamlit](Images/streamlit.png) ![Docker](Images/docker.png) |
+| ![GitHub Actions](https://avatars.githubusercontent.com/u/44036562?s=200&v=4) |  |  |
+
 
 
 # Project Folder Structure
