@@ -1,0 +1,29 @@
+# .dockerignore
+
+# Virtual environments
+venv
+
+# MLflow experiment tracking directory
+mlruns
+
+# Git repository
+.git
+
+# Python cache files
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build
+dist
+*.egg-info
+
+# Jupyter Notebook checkpoints
+*.ipynb_checkpoints
