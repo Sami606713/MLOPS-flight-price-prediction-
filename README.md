@@ -4,13 +4,16 @@
 - We can also use all the `open source` as i needed in this project.
 
 ## Tools Used in This Project
-| Category                      | Tools                        | Image |
+## Tools Used in This Project
+
+|  |  |
 |-------------------------------|------------------------------|-------|
-| Data Manipulation and Visualization | NumPy, pandas, matplotlib, seaborn | ![NumPy](https://raw.githubusercontent.com/numpy/numpy/main/branding/logo/primary/numpylogo.png) ![pandas](Images\pandas.png) ![matplotlib](Images\matplot.png) ![seaborn](Images\seaborn.jpeg) |
-| Model Training and Monitoring | scikit-learn, MLflow         | ![scikit-learn](https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png) ![MLflow](Images/mlflow2.png) |
-| Hyperparameter Tuning         | Optuna                       | ![Optuna](Images/optuna.png) |
-| Web Application               | Streamlit                    | ![Streamlit](https://streamlit.io/images/brand/streamlit-mark-color.png) |
-| Containerization              | Docker, GitHub Actions       | ![Docker](https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png) ![GitHub Actions](https://avatars.githubusercontent.com/u/44036562?s=200&v=4) |
+|  |  | ![NumPy](https://raw.githubusercontent.com/numpy/numpy/main/branding/logo/primary/numpylogo.png) ![pandas](Images\pandas.png) ![matplotlib](Images\matplot.png) ![seaborn](Images\seaborn.jpeg) |
+|  |  | ![scikit-learn](https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png) ![MLflow](Images/mlflow2.png) |
+|  |  | ![Optuna](Images/optuna.png) |
+|  |  | ![Streamlit](https://streamlit.io/images/brand/streamlit-mark-color.png) |
+|  |  | ![Docker](https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png) ![GitHub Actions](https://avatars.githubusercontent.com/u/44036562?s=200&v=4) |
+
 
 # Project Folder Structure
 This repository includes a script, `template.py`, which automates the creation of the project structure. Running this script will automatically create the necessary folders and files for your project.
