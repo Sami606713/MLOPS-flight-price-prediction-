@@ -4,7 +4,9 @@
 - We can also use all the `open source` as i needed in this project.
 
 ## Tools Used in This Project
-| Category                      | Tools                        | Image |
+## Tools Used in This Project
+
+|  |  |
 |-------------------------------|------------------------------|-------|
 | Data Manipulation and Visualization | NumPy, pandas, matplotlib, seaborn | ![NumPy](https://raw.githubusercontent.com/numpy/numpy/main/branding/logo/primary/numpylogo.png) ![pandas](Images/pandas.png) ![matplotlib](Images/matplot.png) ![seaborn](Images/seaborn.jpeg) |
 | Model Training and Monitoring | scikit-learn, MLflow         | ![scikit-learn](https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png) ![MLflow](Images/mlflow2.png) |
