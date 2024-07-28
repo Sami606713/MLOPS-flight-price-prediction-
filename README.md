@@ -3,6 +3,15 @@
 - I can approcah this project using `MLOPs` principal.
 - We can also use all the `open source` as i needed in this project.
 
+## Tools Used in This Project
+| Category                      | Tools                        | Image |
+|-------------------------------|------------------------------|-------|
+| Data Manipulation and Visualization | NumPy, pandas, matplotlib, seaborn | ![NumPy](https://raw.githubusercontent.com/numpy/numpy/main/branding/logo/primary/numpylogo.png) ![pandas](Images\pandas.png) ![matplotlib](Images\matplot.png) ![seaborn](Images\seaborn.jpeg) |
+| Model Training and Monitoring | scikit-learn, MLflow         | ![scikit-learn](https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png) ![MLflow](Images/mlflow2.png) |
+| Hyperparameter Tuning         | Optuna                       | ![Optuna](Images/optuna.png) |
+| Web Application               | Streamlit                    | ![Streamlit](https://streamlit.io/images/brand/streamlit-mark-color.png) |
+| Containerization              | Docker, GitHub Actions       | ![Docker](https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png) ![GitHub Actions](https://avatars.githubusercontent.com/u/44036562?s=200&v=4) |
+
 # Project Folder Structure
 This repository includes a script, `template.py`, which automates the creation of the project structure. Running this script will automatically create the necessary folders and files for your project.
 
@@ -119,3 +128,34 @@ This script is designed to train and evaluate multiple regression models to sele
 - After hyperparameter tunning we can find the best model we can save and register the model using `mlflow registry`
 
 ![Optuna and mlflow](Images/mlflow.png)
+
+# Convert to Web App
+- **After obtaining the best model, we can convert it into a web app.**
+- **For the web app, we can use Streamlit to build an awesome frontend interface.**
+
+# Use Case
+- **To use the application, first clone the repository to your PC.**
+```python
+git clone https://github.com/Sami606713/flight-price-prediction.git
+```
+- **After Clone the repo**
+```python 
+cd flight-price-prediction
+```
+- **Make the virtual environent**
+```python
+python -m venv venv
+```
+#### Important
+- **If you want to train the model from scratch, run this command:**
+```python
+python test_environment.py
+```
+
+- **After running the above command, run this command to start the web app:**
+```python
+streamlit run app.py
+```
+
+# If any issue
+- Contact me via email at `sami606713@gmail.com`
